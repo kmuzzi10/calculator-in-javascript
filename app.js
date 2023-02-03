@@ -13,6 +13,7 @@ function clr(){
 }
 function del(){
     var a;
-    a = document.getElementById('inp').value ;
-    a.splice(0,1)
+    a = document.getElementById('inp').value;
+    a= a.slice(0,-1)
+    document.getElementById('inp').value=a
 }
